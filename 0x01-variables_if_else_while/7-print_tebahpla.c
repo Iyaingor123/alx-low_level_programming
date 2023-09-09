@@ -8,16 +8,9 @@
 int main(void)
 
 {
-
-char c;
-c = 'z';
-
-while
-(c >= 'a');
-{
-putchar(c);
-c--;
-}
+char i;
+for (i = 'z' ; i >= 'a' ; i--)
+	putchar(i);
 putchar('\n');
 return (0);
 
