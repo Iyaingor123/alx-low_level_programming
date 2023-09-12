@@ -1,5 +1,12 @@
 #include "main.h"
 #include <stdio.h>
+
+/**
+ * times_table - function for times table
+ * description: print 9 times table
+ * Return: void
+ */
+
 void times_table(void)
 {
 	int i;
@@ -12,7 +19,7 @@ void times_table(void)
 		{
 			result = i * j;
 			if (j == 0)
-				printf("%d, ",result);
+				printf("%d, ", result);
 			else
 			{
 				printf("%2d", result);
