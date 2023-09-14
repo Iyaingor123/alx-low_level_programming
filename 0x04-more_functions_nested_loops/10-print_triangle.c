@@ -9,6 +9,7 @@ void print_triangle(int size)
 {
 	int hash;
 	int index;
+	int z;
 
 	if (size < 0)
 		_putchar('\n');
@@ -21,6 +22,10 @@ void print_triangle(int size)
 				{
 					_putchar(32);
 			}
+				for (z = 0; z <= hash; z++)
+				{
+					_putchar(35);
+				}
 				_putchar('\n');
 		}
 	}
