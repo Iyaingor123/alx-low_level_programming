@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_triangle - function printing a triangle with the charater #
+ * print_triangle - function printing a triangle
  * @size: the size of the triangle
  */
 
@@ -12,21 +12,20 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (hash = 1; hash <= size; hash++)
+		for (hash = 0; hash < size; hash++)
 		{
-			for (index = size - hash; index > 0; index--)
+			for (index = 0; index < size; index++)
 			{
-				_putchar(' ');
+				if (index < size - (hash + 1))
+			{
+
 			}
-			for (index = 0; index < hash; index++)
-			{
+				else
+				{
 				_putchar('#');
 			}
-			if (hash == size)
-			{
-				continue;
 			}
-			_putchar('\n');
+				_putchar('\n');
 		}
 	}
 }
