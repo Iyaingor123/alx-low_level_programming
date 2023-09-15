@@ -1,33 +1,34 @@
 #include "main.h"
 
 /**
- * print_triangle - function printing a triangle
- * @size: the size of the triangle
+ * print_triangle - prints a triangle of squares reecording line
+ * @size: the size of the square line
+ * Return: 0
  */
 
 void print_triangle(int size)
 {
-	int hash;
-	int index;
-	int z;
+int x;
+int y;
+int z;
 
-	if (size < 0)
-		_putchar('\n');
-	{
-		for (hash = 0; hash < size; hash++)
-		{
-			for (index = 0; index < size; index++)
-			{
-				for (index = size - hash; index > 1; index--)
-				{
-					_putchar(32);
-			}
-				for (z = 0; z <= hash; z++)
-				{
-					_putchar(35);
-				}
-				_putchar('\n');
-		}
-	}
+if (size < 0)
+{
+_putchar('\n');
+}
+else
+{
+for (x = 0; x < size; x++)
+{
+for (y = size - x;  y > 1; y--)
+{
+_putchar(32);
+}
+for (z = 0; z <= x; z++)
+{
+_putchar(35);
+}
+_putchar('\n');
+}
 }
 }
