@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangle of squares reecording line
+ * print_triangle - print a triangle of squares reecording line
  * @size: the size of the square line
  * Return: 0
  */
 
 void print_triangle(int size)
+
 {
+
 int x;
 int y;
 int z;
 
-if (size < 0)
+if (size <= 0)
 {
 _putchar('\n');
 }
