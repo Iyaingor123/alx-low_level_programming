@@ -1,5 +1,10 @@
 #include <stdio.h>
-#include "main.h"
+
+/**
+ * main - this program is untouchable
+ * Description - it uses magic
+ * Return: 0
+ */
 
 int main(void)
 {
