@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _puts_recursion - function of recursion that prints to screen
- * @s: pointer function to a string
+ * _puts_recursion - recursive function
+ * @s: input
  * Return: 0
  */
 
