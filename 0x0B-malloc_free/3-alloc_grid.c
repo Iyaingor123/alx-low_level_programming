@@ -9,7 +9,6 @@
  *
  * Return: If successful, or NULL if allocation fails
  */
-
 int **alloc_grid(int width, int height)
 {
 
