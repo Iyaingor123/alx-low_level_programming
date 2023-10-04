@@ -3,77 +3,20 @@
 #include <stdlib.h>
 
 /**
- * print_grid - prints a grid of integers
- * @grid: the address of the two dimensional grid
- * @width: width of the grid
- * @height: height of the grid
+ * free_grid - ...
+ * @grid: ...
+ * @height: ...
  *
- * Return: void
+ * Return: ...
  */
 
-void print_grid(int **grid, int width, int height)
-{
-	int w;
-	int h;
-
-	h = 0;
-	while (h < height)
-	{
-
-			w = 0;
-			while (w < width)
-			{
-
-			printf("%d ", grid[h][w]);
-			w++;
-	}
-
-			printf("\n");
-			h++;
-}
-}
-
-
-/**
- * free_grid - free a two dimensional grid
- * @grid: the grid to free
- * @height: height of the grid
- *
- * Return: void
- */
 void free_grid(int **grid, int height)
 {
-	int h;
+	int j;
 
-	for (h = 0; h < height; h++)
+	for (j = 0; j < height; j++)
 	{
-		free(grid[h]);
+		free(grid[j]);
 	}
 	free(grid);
 }
-
-/**
- * main - check the code for ALX Scholl students.
- *
- * Return: 0
- */
-
-int main(void)
-{
-
-int **grid;
-
-grid = alloc_grid(6, 4);
-if (grid == NULL)
-{
-	return (1);
-}
-print_grid(grid, 6, 4);
-printf("\n");
-grid[0][3] = 98;
-grid[3][4] = 402;
-print_grid(grid, 6, 4);
-free_grid(grid, 4);
-return (0);
-}
-
