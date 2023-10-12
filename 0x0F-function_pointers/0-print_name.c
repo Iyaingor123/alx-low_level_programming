@@ -5,8 +5,8 @@
  * *print_name - name print using pointer to function
  * @name: the string to add
  * @f: the pointer to function
- * Return: 0
- */
+ * Return: nothing
+ **/
 
 void print_name(char *name, void (*f)(char *))
 {
