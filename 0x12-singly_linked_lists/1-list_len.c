@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 #include <stdio.h>
 
 /**
@@ -7,11 +7,9 @@
  * Return: the length of the node
  */
 
-size_t list_len(const list_t *h);
+size_t list_len(const list_t *h)
 {
-	size_t len;
-
-	len = 0;
+	size_t len = 0;
 
 	while (h != NULL)
 	{
